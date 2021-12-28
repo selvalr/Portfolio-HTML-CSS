@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0,0.5);
+    position: sticky;
+    top: 0;
+
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    list-style: none;
+
+}
+.nav-bar ul li{
+    font-family: century;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    padding: 10px 40px;
+    color: wheat;
+}
+.nav-bar ul li a:hover{
+    background: white;
+    color: black;
+    box-shadow: 5px 5px;
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 840px;
+    color: white;
+    
+}
+#home::before{
+    content: " ";
+    position:absolute;
+    top: 0;
+    right: 0;
+    background: url("./image/home1.jpg") no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.heading{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn-class{
+    padding: 10px 10px;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 4px 4px 4px 4px ;
+    outline: none;
+    transition: .6s ease;
+    
+}
+.btn-class:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 5px white;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 600px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+.intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.headingss{
+    font-size: 4rem;
+    text-align: center;
+    padding: 30px;
+}
+/*portfolio*/
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(93, 161, 168);
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+.port h1{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 4rem;
+    
+}
+.img-zoom:hover{
+   padding: 30px;
+}
+
+/*services*/ 
+#service{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.head-service{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.web{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 350px;
+    border: 2px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgb(255,45,45)50%,white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+
+}
+.web:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 20px rgb(255,45,45);
+}
+.website{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+/*contact*/
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: saddlebrown;
+    color: white;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    width: 30%;
+}
+#msg{
+    padding: 10px;
+   margin: 15px;
+    width: 20%;
+    border: none;
+}
+#send{
+    cursor: pointer;
+    padding: 10px;
+    background: royalblue;
+    color: white;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+#send:hover{
+    background: rgb(
+        215, 221, 222
+        );
+        color: black;
+}
